@@ -1,0 +1,12 @@
+{
+	"name": "test-nodejs",
+	"version": "0.0.1",
+	"dependencies": {
+		"commander": "latest",
+		"express": "3.x",
+		"mysql": "0.9"
+	},
+	"devDependencies": {
+		"color": "latest"
+	}
+}
