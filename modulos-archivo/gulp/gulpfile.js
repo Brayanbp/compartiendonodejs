@@ -1,13 +1,13 @@
-
 var gulp = require('gulp'),
-	plugins= require('gulp-load-plugins');
+  concat = require('gulp-concat'),
+  uglify = require('gulp-uglify');
 
-gulp.task('styles', function () {
-    return gulp.src('stylus/*.styl')
-    .pipe(plugins.stylus({compress: false}))
-    .pipe(gulp.dest('css/'));
-});
-
-gulp.task('default', function (cb) {
-   console.log("default");
+/*
+* Configuración de la tarea 'demo'
+*/
+gulp.task('demo', function () {
+  gulp.src('js/*.js')
+  .pipe(concat('todo.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest('js/build/'))
 });
