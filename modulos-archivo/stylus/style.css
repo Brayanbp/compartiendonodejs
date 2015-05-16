@@ -1,0 +1,30 @@
+body {
+  background: #f00;
+  color: #000;
+  font-size: 13px;
+  line-height: 15px;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+#container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px;
+  width: 800px;
+}
+.lnkWidget {
+  color: #000;
+  text-align: left;
+}
+#widget h2 {
+  border-bottom: 1px solid;
+}
+#widget .description {
+  text-align: justify;
+}
